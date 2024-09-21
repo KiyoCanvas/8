@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Art Gallery</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+            margin: 0;
+            padding: 20px;
+            background-color: #f4f4f4;
+        }
+        h1 {
+            color: #333;
+            text-align: center;
+        }
+        .gallery {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 20px;
+        }
+        .art-piece {
+            background-color: white;
+            border: 1px solid #ddd;
+            padding: 10px;
+            max-width: 300px;
+            box-shadow: 0 0 10px rgba(0,0,0,0.1);
+        }
+        .art-piece img {
+            max-width: 100%;
+            height: auto;
+        }
+        .art-piece h2 {
+            margin-top: 10px;
+            font-size: 1.2em;
+        }
+        .art-piece p {
+            color: #666;
+        }
+    </style>
+</head>
+<body>
+    <h1>My Art Gallery</h1>
+    <div class="gallery">
+        <div class="art-piece">
+            <img src="path/to/your/artwork1.jpg" alt="Artwork 1">
+            <h2>Artwork Title 1</h2>
+            <p>Description of artwork 1.</p>
+        </div>
+        <div class="art-piece">
+            <img src="path/to/your/artwork2.jpg" alt="Artwork 2">
+            <h2>Artwork Title 2</h2>
+            <p>Description of artwork 2.</p>
+        </div>
+        <!-- 必要に応じて追加のart-pieceを追加 -->
+    </div>
+</body>
+</html>
