@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Art Gallery</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+            margin: 0;
+            padding: 20px;
+            background-color: #f4f4f4;
+        }
+        h1 {
+            color: #333;
+            text-align: center;
+        }
+        .gallery {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 80vh;
+        }
+        .art-piece {
+            background-color: white;
+            border: 1px solid #ddd;
+            padding: 20px;
+            max-width: 80%;
+            box-shadow: 0 0 10px rgba(0,0,0,0.1);
+            text-align: center;
+        }
+        .art-piece img {
+            max-width: 100%;
+            height: auto;
+        }
+        .art-piece h2 {
+            margin-top: 20px;
+            font-size: 1.5em;
+        }
+        .art-piece p {
+            color: #666;
+        }
+    </style>
+</head>
+<body>
+    <h1>My Art Gallery</h1>
+    <div class="gallery">
+        <div class="art-piece">
+            <img src="undefined_image-3.png" alt="My Artwork">
+            <h2>My Artwork</h2>
+            <p>This is my beautiful artwork. It represents [ここに作品の説明を書いてください].</p>
+        </div>
+    </div>
+</body>
+</html>
