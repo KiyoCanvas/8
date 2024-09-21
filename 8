@@ -1,0 +1,125 @@
+"use client";
+import React from "react";
+import ButtonStyles from "../components/button-styles";
+
+function MainComponent() {
+  return (
+    <div className="bg-[#FCFCFC] font-inter">
+      <nav className="flex justify-between items-center p-4 border-b border-[#D1D1D3]">
+        <div className="text-lg text-[#101012]">Art Display</div>
+        <ul className="flex space-x-6 text-[#101012]">
+          <li>
+            <a href="#home" className="hover:underline">
+              Home
+            </a>
+          </li>
+          <li>
+            <a href="#gallery" className="hover:underline">
+              Gallery
+            </a>
+          </li>
+          <li>
+            <a href="#artists" className="hover:underline">
+              Artists
+            </a>
+          </li>
+          <li>
+            <a href="#contact" className="hover:underline">
+              Contact
+            </a>
+          </li>
+        </ul>
+      </nav>
+
+      <section id="home" className="text-center p-10">
+        <h1 className="text-3xl mb-4 text-[#101012]">Welcome to Art World</h1>
+        <p className="text-[#777777]">
+          Discover amazing artworks from talented artists.
+        </p>
+      </section>
+
+      <section id="gallery" className="p-6">
+        <h2 className="text-2xl mb-4 text-[#101012]">Gallery</h2>
+        <div className="grid grid-cols-1 md:grid-cols-3 gap-4">
+          <div className="overflow-hidden rounded-lg border border-[#D1D1D3] p-2 bg-[#F2F2F2]">
+            <img
+              src="images/art1.jpg"
+              alt="Abstract Art Piece"
+              className="w-full h-auto rounded"
+            />
+            <div className="mt-2 text-[#101012]">Abstract Art Piece</div>
+          </div>
+          <div className="overflow-hidden rounded-lg border border-[#D1D1D3] p-2 bg-[#F2F2F2]">
+            <img
+              src="images/art2.jpg"
+              alt="Landscape Painting"
+              className="w-full h-auto rounded"
+            />
+            <div className="mt-2 text-[#101012]">Landscape Painting</div>
+          </div>
+          <div className="overflow-hidden rounded-lg border border-[#D1D1D3] p-2 bg-[#F2F2F2]">
+            <img
+              src="images/art3.jpg"
+              alt="Modern Sculpture"
+              className="w-full h-auto rounded"
+            />
+            <div className="mt-2 text-[#101012]">Modern Sculpture</div>
+          </div>
+        </div>
+      </section>
+
+      <section id="artists" className="p-6">
+        <h2 className="text-2xl mb-4 text-[#101012]">Artists</h2>
+        <div>
+          <div className="overflow-hidden rounded-lg border border-[#D1D1D3] p-4 bg-[#F2F2F2]">
+            <h3 className="text-xl text-[#101012]">John Doe</h3>
+            <p className="text-[#777777] mb-2">Contemporary Artist</p>
+            <p className="text-[#101012]">
+              John Doe is known for his abstract and modern art pieces that
+              explore the boundaries of emotion and perception.
+            </p>
+          </div>
+        </div>
+      </section>
+
+      <section id="contact" className="p-6">
+        <h2 className="text-2xl mb-4 text-[#101012]">Contact</h2>
+        <form className="max-w-xl">
+          <div className="mb-4">
+            <label className="block text-[#777777]" htmlFor="name">
+              Name
+            </label>
+            <input
+              type="text"
+              className="w-full p-2 border rounded border-[#D1D1D3]"
+              name="name"
+            />
+          </div>
+          <div className="mb-4">
+            <label className="block text-[#777777]" htmlFor="email">
+              Email
+            </label>
+            <input
+              type="email"
+              className="w-full p-2 border rounded border-[#D1D1D3]"
+              name="email"
+            />
+          </div>
+          <div className="mb-4">
+            <label className="block text-[#777777]" htmlFor="message">
+              Message
+            </label>
+            <textarea
+              className="w-full p-2 border rounded border-[#D1D1D3]"
+              name="message"
+              rows="4"
+            ></textarea>
+          </div>
+          <ButtonStyles text="Send" onClick={() => {}} />
+        </form>
+      </section>
+    </div>
+  );
+}
+
+export default MainComponent;
